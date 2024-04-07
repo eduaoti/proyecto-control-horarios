@@ -40,10 +40,10 @@ a{
 .app {
     font-weight: 800;
     font-size: 125%;
-    padding-top: 70px;
+    /* Agrega padding-top para dejar espacio para la barra de navegación */
+    padding-top: 70px; /* Puedes ajustar este valor según sea necesario */
     
 }
-
   .top-logo {
     background-color: #ffffff;
     width: auto;
@@ -73,32 +73,6 @@ a{
   display: block;
 }
 
-.boton-adm,
-.boton-soli,
-.boton {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    padding: 0.7em 2em;
-    background-color: #011245;
-    color: white;
-    text-decoration: none;
-    cursor: auto;
-    border-bottom: none;
-}
-
-.boton-right {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    padding: 0.9em 2em;
-    background-color: #011245;
-    color: white;
-    text-decoration: none;
-    border-top: none;
-    border-bottom: none;
-}
-
 .boton-left {
   display: flex;
   justify-content: center; 
@@ -111,69 +85,8 @@ a{
     border-bottom: none;
 }
 
-.boton-adm:hover,
-.boton-soli:hover,
-.boton-right:hover,
-.boton-left:hover,
-.boton:hover {
+.boton-left:hover{
     background-color: #003366;
-}
-
-/*Menu desplegable Usuario*/
-
-.menu-ver-acc {
-  border-radius: 10%;
-  top: 80%;
-  right: 0%;
-  display: none;
-  position: absolute;
-  background-color: #c9c9c9;
-  overflow: hidden;
-}
-
-/* Estilos para las opciones del menú desplegable */
-.menu-ver-acc a {
-  color: #000000;
-  padding: 10px ;
-  text-decoration: none;
-  display: block;
-}
-
-.menu-ver-acc a:hover {
-  background-color: #2839bc;
-  color: #ffffff;
-}
-
-.menu-ver:hover .menu-ver-acc {
-  display: block;
-}
-
-
-/* Estilos para el contenido del menú desplegable */
-.dropdown-content {
-display: none;
-position: absolute;
-background-color: #dfdcdc;
-z-index: 1;
-}
-
-/* Estilos para las opciones del menú desplegable */
-.dropdown-content a {
-color: #000000;
-padding: 3px 22.5px;
-text-decoration: none;
-display: block;
-transition: background-color 0.2s ease;
-}
-
-
-.dropdown-content a:hover {
-background-color: #2839bc;
-color: #ffffff;
-}
-
-.dropdown:hover .dropdown-content {
-display: block;
 }
 
 

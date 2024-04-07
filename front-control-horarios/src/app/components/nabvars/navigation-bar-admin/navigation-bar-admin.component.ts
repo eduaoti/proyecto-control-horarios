@@ -1,14 +1,14 @@
 import { Component, HostListener } from '@angular/core';
-import { AuthService } from '../../services/auth/auth.service';
+import { AuthService } from '../../../services/auth/auth.service';
 import { CookieService } from 'ngx-cookie-service';
 import { Router } from '@angular/router';
-
 @Component({
-  selector: 'app-navigation-bar', // Ensure this selector matches the one used in the template
-  templateUrl: './navigation-bar.component.html',
-  styleUrls: ['./navigation-bar.component.css']
+  selector: 'app-navigation-bar-admin',
+  templateUrl: './navigation-bar-admin.component.html',
+  styleUrls: ['./navigation-bar-admin.component.css']
 })
-export class NavigationBarComponent {
+export class NavigationBarAdminComponent {
+
   constructor(
     private authServicio: AuthService,
     private cookieService: CookieService,
@@ -32,7 +32,7 @@ export class NavigationBarComponent {
   salir(){
     this.authServicio.logOut(this.token).subscribe(
       (response) => { 
-        this.cookieService.set('',response.token)
+        this.cookieService.set('token',response.token)
         console.log(response)
         this.router.navigate(['login'])
       },

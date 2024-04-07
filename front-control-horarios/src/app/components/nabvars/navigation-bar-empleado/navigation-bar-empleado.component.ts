@@ -1,14 +1,13 @@
 import { Component, HostListener } from '@angular/core';
-import { AuthService } from '../../services/auth/auth.service';
+import { AuthService } from '../../../services/auth/auth.service';
 import { CookieService } from 'ngx-cookie-service';
 import { Router } from '@angular/router';
-
 @Component({
-  selector: 'app-navigation-bar', // Ensure this selector matches the one used in the template
-  templateUrl: './navigation-bar.component.html',
-  styleUrls: ['./navigation-bar.component.css']
+  selector: 'app-navigation-bar-empleado',
+  templateUrl: './navigation-bar-empleado.component.html',
+  styleUrls:['./navigation-bar-empleado.component.css']
 })
-export class NavigationBarComponent {
+export class NavigationBarEmpleadoComponent {
   constructor(
     private authServicio: AuthService,
     private cookieService: CookieService,

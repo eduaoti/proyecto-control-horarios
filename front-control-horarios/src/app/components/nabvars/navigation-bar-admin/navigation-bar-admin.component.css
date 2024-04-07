@@ -40,10 +40,10 @@ a{
 .app {
     font-weight: 800;
     font-size: 125%;
-    padding-top: 70px;
+    /* Agrega padding-top para dejar espacio para la barra de navegación */
+    padding-top: 70px; /* Puedes ajustar este valor según sea necesario */
     
 }
-
   .top-logo {
     background-color: #ffffff;
     width: auto;

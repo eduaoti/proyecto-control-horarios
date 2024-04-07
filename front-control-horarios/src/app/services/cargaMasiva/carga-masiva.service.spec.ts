@@ -1,13 +1,13 @@
-import {DepartamentoService } from './departamento.service';
 import { TestBed } from '@angular/core/testing';
 
+import { CargaMasivaService } from './carga-masiva.service';
 
-describe('DepartamentoService', () => {
-  let service: DepartamentoService;
+describe('CargaMasivaService', () => {
+  let service: CargaMasivaService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(DepartamentoService);
+    service = TestBed.inject(CargaMasivaService);
   });
 
   it('should be created', () => {

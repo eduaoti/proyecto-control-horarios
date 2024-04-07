@@ -1,15 +1,13 @@
-const { Schema, model } = require('mongoose');
+const mongoose = require('mongoose');
 
-const departamentoSchema = new Schema({
-    NombreDepartamento:String,
-    Direccion:[
-                {Numero:String},
-                {Calle:Number},
-                {Colonia:String},
-                {Cp:String}
-              ]
+const departamentoSchema = new mongoose.Schema({
+  NombreDepartamento: String,
+  Direccion: {
+    Numero: String,
+    Calle: String,
+    Colonia: String,
+    Cp: String
+  }
 });
 
-const Departamento = model('Departamento', departamentoSchema);
-
-module.exports = Departamento;
+module.exports = mongoose.model('Departamento', departamentoSchema);

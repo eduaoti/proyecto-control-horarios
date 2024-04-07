@@ -6,8 +6,8 @@ const solicitudhorarioController = require('../controllers/solicitudhorarioContr
 
 router.post('/', solicitudhorarioController.create);
 router.get('/', solicitudhorarioController.getAll);
-router.get('/:id', solicitudhorarioController.getById);
-router.put('/:id', solicitudhorarioController.update);
-router.delete('/:id', solicitudhorarioController.delete);
+router.get('/:NombreEmpleado', solicitudhorarioController.getById);
+router.put('/:NombreEmpleado', solicitudhorarioController.update);
+router.delete('/:NombreEmpleado', solicitudhorarioController.delete);
 
 module.exports = router;

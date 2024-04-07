@@ -20,6 +20,7 @@ const contratosRouter = require('./contratosRoutes');
 const areaRoutes = require('./areaRoutes')
 const sedeRoute = require('./sedeRoutes')
 const authRoute = require('./authRoutes')
+//const cargaMasivaRoute = require('./cargaMasivaRoutes')
 
 
 
@@ -36,6 +37,7 @@ router.use('/contrato', contratosRouter);
 router.use('/area', areaRoutes)
 router.use('/sedes', sedeRoute)
 router.use('/auth', authRoute)
+//router.use('/empleado', cargaMasivaRoute)
 
 
 

@@ -1,8 +1,14 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');  
+const bodyparser = require('body-parser')
+require('dotenv').config();
 
-mongoose.connect('mongodb://root:root@localhost:27017/ControlHorarios', { useNewUrlParser: true, useUnifiedTopology: true,authSource: 'admin' });
+
+app.use(bodyparser.json());
+app.use(bodyparser.urlencoded({ extended: true }));
+
+mongoose.connect('mongodb://root:root@localhost:27017/ControlHorarios', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 
 db.on('error', (error) => {
@@ -26,3 +32,5 @@ app.use((err, req, res, next) => {
 });
 
 module.exports = app;
+
+  

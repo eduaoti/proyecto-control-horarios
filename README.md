@@ -107,6 +107,7 @@ En este apartado se podra llegar desde la barra de navegacion del administrador 
 ### CARGA MASIVA 
 
 Otra vista aparte donde se permite arrastrar archivos .xlsx, .csv, etc. o bien al dar click en el apartado donde se puede arrastrar se abra una pestaña del explorador de archivos y desde ahi poder cargar los archivos.
+# Diagrama de casos de Uso
 
 # Modelo de la base de datos
 

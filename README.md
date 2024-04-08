@@ -107,3 +107,82 @@ En este apartado se podra llegar desde la barra de navegacion del administrador 
 ### CARGA MASIVA 
 
 Otra vista aparte donde se permite arrastrar archivos .xlsx, .csv, etc. o bien al dar click en el apartado donde se puede arrastrar se abra una pestaña del explorador de archivos y desde ahi poder cargar los archivos.
+
+# Modelo de la base de datos
+
+### Administrador
+- **NombreAdmin**: String
+- **CorreoAdmin**: String
+- **Contrasena**: String
+- **Region**: String
+- **root**: String
+### Area 
+- **NombreArea**: String,
+  **Descripcion**: String
+### Contratos
+- **TipoContrato**: String
+- **DiasTrabajados**: Number
+- **DiasDescansados**: Number
+- **HorasPorDia**: Number
+- **TurnosContrato**: Array
+
+### Departamento
+- **NombreDepartamento**: String
+- **Direccion**: 
+  - **Numero**: String
+  - **Calle**: String
+  - **Colonia**: String
+  - **Cp**: String
+
+### Empleado
+- **Nombre**: String
+- **AppE**: String
+- **ApmE**: String
+- **FechaNac**: Date
+- **Correo**: String
+- **Contrasena**: String
+- **Region**: String
+- **AreaTrabajo**: String
+- **Departamento**: String
+- **Contrato**: String
+- **TurnoActual**: 
+  - **inicio**: String
+  - **fin**: String
+- **HorarioTraining**: 
+  - **Fecha**: Date
+  - **HoraInicial**: String
+  - **HoraFinal**: String
+- **NombreAdmin**: String
+- **FechaDeIngreso**: Date
+
+### HistorialHorario
+- **NombreEmpleado**: String
+- **FechaInicio**: Date
+- **FechaFin**: Date
+
+### Sede
+- **region**: String
+- **pais**: String
+
+### SolicitudHorario
+- **NombreEmpleado**: String
+- **NombreAdmin**: String
+- **Contrato**: String
+- **TurnoSolicitado**: 
+  - **inicio**: String
+  - **fin**: String
+- **EstadoSolicitud**: String
+- **Correo**: String
+
+### SolicitudVacaciones
+- **NombreEmpleado**: String
+- **FechaSolicitud**: 
+  - **FechaInicioVacaciones**: Date
+  - **FechaTerminoVacaciones**: Date
+- **EstadoSolicitud**: String
+- **Descripcion**: String
+
+### Turno
+- **nombreTurno**: String
+- **horaFinal**: Date
+- **horaInicio**: Date

@@ -196,3 +196,19 @@ Aplicación web para el registro y asignación de horarios de empleados, utiliza
   - NombreTurno: String
   - HoraFinal: Date
   - HoraInicio: Date
+ 
+## Diagrama de Componentes
+## Diagrama de Componentes
+
+![DC1](https://raw.githubusercontent.com/ABOK451/proyecto-control-horarios/main/documentacion/diagrama%20de%20componente/dc1.jpg)
+
+![DC2](https://raw.githubusercontent.com/ABOK451/proyecto-control-horarios/main/documentacion/diagrama%20de%20componente/dc2.jpg)
+
+![DC3](https://raw.githubusercontent.com/ABOK451/proyecto-control-horarios/main/documentacion/diagrama%20de%20componente/dc3.jpg)
+
+![DC4](https://raw.githubusercontent.com/ABOK451/proyecto-control-horarios/main/documentacion/diagrama%20de%20componente/dc4.jpg)
+
+![DC5](https://raw.githubusercontent.com/ABOK451/proyecto-control-horarios/main/documentacion/diagrama%20de%20componente/dc5.jpg)
+
+  
+

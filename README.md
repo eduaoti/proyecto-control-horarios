@@ -30,6 +30,37 @@ Aplicación web para el registro y asignación de horarios de empleados, utiliza
 - **HI-USS-004:** Dar de alta nuevos administradores y usuarios.
 - **HI-USS-005:** Realizar copias de seguridad y restaurar datos.
 
+## Análisis de la Solución
+### Requerimientos Funcionales - Integradora 2024
+
+#### Módulo de Empleado:
+
+1. El sistema debe permitir a los empleados solicitar su horario para el próximo mes, eligiendo el tipo de turno deseado durante la última semana de cada mes.
+2. La aplicación debe mostrar a cada empleado su horario mensual en formato de Gantt, proporcionando una visualización clara de los turnos de trabajo.
+3. Después de solicitar un turno, el sistema debe confirmar la elección de manera rápida y eficiente. Además, se enviará una notificación por correo electrónico con la opinión de la solicitud.
+4. Los empleados deben tener la capacidad de solicitar vacaciones a través de la aplicación, indicando las fechas deseadas y asegurándose de que no haya conflictos con el horario laboral.
+5. La aplicación debe mostrar visualmente los días disponibles para solicitar vacaciones, facilitando la elección de fechas por parte del empleado.
+6. Los empleados deben poder acceder a un historial de sus horarios anteriores para referencia y planificación personal.
+
+#### Módulo de Administrador:
+
+1. Los administradores deben tener la capacidad de gestionar y ajustar el número de empleados permitidos en cada tipo de turno para garantizar una distribución equitativa de recursos.
+2. Los administradores deben poder asignar periodos de training dentro del calendario de los empleados para mejorar sus habilidades y conocimientos.
+3. Los administradores deben poder registrar nuevos empleados en la aplicación y realizar cambios en sus horarios cuando sea necesario para mantener actualizada la información del personal.
+4. La aplicación debe generar automáticamente los horarios mensuales de los empleados basándose en el contrato y turno elegido, evitando asignar días de trabajo o descanso en días de training o vacaciones.
+5. Los administradores deben tener la capacidad de visualizar los horarios de los empleados en formato de Gantt mediante una librería actualizada.
+
+#### Módulo de Super Administrador:
+
+1. El super administrador debe poder visualizar y seleccionar la lista de todos los administradores y las regiones que administran para un control efectivo.
+2. Al seleccionar a un administrador, el super administrador debe poder visualizar todos los empleados que administra dicho administrador.
+3. El super administrador debe poder visualizar las jornadas laborales de cada empleado para determinar el mejor momento para sus vacaciones.
+4. El super administrador debe tener la capacidad de dar de alta nuevos usuarios administradores y otros tipos de usuarios.
+
+
+## Diagrama de Casos de Uso
+
+
 ## Vistas
 
 ### Barra de navegación Empleado
@@ -84,7 +115,6 @@ Aplicación web para el registro y asignación de horarios de empleados, utiliza
 #### CARGA MASIVA 
 - Vista para cargar archivos de datos.
 
-## Diagrama de Casos de Uso
 
 ## Modelo de la base de datos
 

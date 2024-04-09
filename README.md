@@ -60,6 +60,17 @@ Aplicación web para el registro y asignación de horarios de empleados, utiliza
 
 ## Diagrama de Casos de Uso
 
+### Actores
+
+1. SuperAdmin
+2. Admin
+3. Empleado
+
+![DCU1](https://github.com/ABOK451/proyecto-control-horarios/blob/main/documentacion/diagrama%20casos%20de%20uso/imagen_2024-04-09_000129415.png)
+
+![DCU2](https://github.com/ABOK451/proyecto-control-horarios/blob/main/documentacion/diagrama%20casos%20de%20uso/imagen_2024-04-09_000151169.png)
+
+![DCU3](https://github.com/ABOK451/proyecto-control-horarios/blob/main/documentacion/diagrama%20casos%20de%20uso/imagen_2024-04-09_000204959.png)
 
 ## Vistas
 

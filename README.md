@@ -1,189 +1,168 @@
 # ControlHorarios
 
-# Descripcion
-Aplicación web mediante la cual se lleve el registro de empleados y asignaciones utilizando el framework de Angular y librerías de Gantt
+## Descripción
+Aplicación web para el registro y asignación de horarios de empleados, utilizando Angular y una librería de Gantt.
+
 ## Historias de Usuario 
+
 ### Empleado
 
-- **HI-USE-001:** Como empleado, quiero poder solicitar mi horario para el próximo mes, eligiendo el tipo de turno que prefiero. La solicitud debe activarse automáticamente durante la última semana de cada mes.
-
-- **HI-USE-002:** Como empleado, deseo visualizar mi horario mensual en formato de Gantt para tener una representación clara y visual de mis turnos de trabajo.
-
-- **HI-USE-003:** Después de elegir mi turno deseado, la función de confirmación debe ser rápida y eficiente. Además, la aplicación debe notificarme vía correo electrónico sobre el resultado de mi solicitud (aprobada o rechazada).
-
-- **HI-USE-004:** Como empleado, quiero solicitar vacaciones a través de la aplicación, indicando las fechas deseadas. La aplicación debe mostrar visualmente los días disponibles para solicitar vacaciones.
-
-- **HI-USE-005:** Como empleado, deseo acceder a un historial de mis horarios anteriores para referencia y planificación personal.
-
-- **HI-USE-006:** Como empleado, quiero visualizar y gestionar los documentos personales almacenados en el sistema, como contratos o certificaciones.
+- **HI-USE-001:** Solicitar horario mensual.
+- **HI-USE-002:** Visualizar horario mensual en formato Gantt.
+- **HI-USE-003:** Confirmación rápida de solicitud de horario.
+- **HI-USE-004:** Solicitar vacaciones.
+- **HI-USE-005:** Acceder al historial de horarios anteriores.
+- **HI-USE-006:** Visualizar y gestionar documentos personales.
 
 ### Administrador
 
-- **HI-USA-001:** Como administrador, quiero gestionar y ajustar el número de empleados permitidos en cada tipo de turno para garantizar una distribución equitativa de recursos.
-
-- HI-USA-002: Como administrador, deseo asignar periodos de training dentro del calendario de los empleados para mejorar sus habilidades y conocimientos.
-
-- HI-USA-003: Como administrador, quiero registrar nuevos empleados y realizar cambios en sus horarios cuando sea necesario para mantener actualizada la información del personal.
-
-- HI-USA-004: La aplicación debe generar automáticamente el horario mensual para cada empleado basándose en el contrato y turno elegido, evitando asignar días de trabajo o descanso en los días de training o vacaciones y continuando con el patrón interrumpido.
-
-- HI-USA-005: La aplicación debe permitir a los administradores visualizar los horarios de los empleados en formato de Gantt, utilizando una librería existente, libre y actualizada.
+- **HI-USA-001:** Gestionar número de empleados por turno.
+- **HI-USA-002:** Asignar periodos de training a empleados.
+- **HI-USA-003:** Registrar nuevos empleados y cambios de horario.
+- **HI-USA-004:** Generar horario mensual automáticamente.
+- **HI-USA-005:** Visualizar horarios de empleados en formato Gantt.
 
 ### Super Administrador
 
-- **HI-USS-001:** Como super administrador, quiero visualizar y seleccionar la lista de todos los administradores y la región que están administrando, para llevar un control efectivo.
+- **HI-USS-001:** Visualizar lista de administradores y regiones.
+- **HI-USS-002:** Ver empleados de cada administrador.
+- **HI-USS-003:** Visualizar jornadas de trabajo de empleados.
+- **HI-USS-004:** Dar de alta nuevos administradores y usuarios.
+- **HI-USS-005:** Realizar copias de seguridad y restaurar datos.
 
-- **HI-USS-002:** Como super administrador, al seleccionar a un administrador, deseo visualizar todos los empleados que administra el administrador seleccionado.
+## Vistas
 
-- **HI-USS-003:** Como super administrador, quiero visualizar las jornadas de trabajo de cada empleado para determinar el mejor tiempo para sus vacaciones.
+### Barra de navegación Empleado
+- Botones: Inicio, Solicitudes, Gantt.
 
-- **HI-USS-004:** Como super administrador, quiero dar de alta nuevos usuarios administradores y otros tipos de usuarios. Quiero recibir alertas sobre posibles problemas de rendimiento o seguridad en la aplicación para tomar medidas proactivas y mantener la estabilidad del sistema.
+### Barra de navegación Administrador
+- Botones: Inicio, Gestión empleados, Solicitudes, Gantt.
 
-- **HI-USS-005:** Como super administrador, necesito tener la capacidad de realizar copias de seguridad y restaurar datos en caso de pérdida o errores críticos, para asegurar la disponibilidad y la integridad de la información del sistema.
+### INICIO
+- Logotipo y lema de la aplicación.
 
-# Vistas
+### INICIO DE SESION
+- Campos para correo electrónico y contraseña.
 
-## Barra de navegacion Empleado
+### PÁGINA DE BIENVENIDA
+- Barra de navegación Empleado y mensaje de bienvenida.
 
-Elementos:  Boton a Inicio, Boton para realizar solicitudes, tanto de cambio turno, como de vacaciones. y un ultimo boton para redirigir los usuarios a su respectiva grafica Gantt.
+### EMPLEADO
 
-## Barra de navegacion Administrador
+#### SOLICITUD DE EMPLEADO HORARIO 
+- Ciudad y departamento calculados automáticamente.
+- Campo para descripción opcional.
+- Visualización de turnos disponibles.
 
-Elementos: Boton a Inicio, Boton para redirigir a la vista de Administracion de empleados, otro boton para reviasr las solicitudes y un boton para revisar la grafica gantt generada.
+#### SOLICITUD DE EMPLEADO VACACIONES 
+- Ciudad y departamento calculados automáticamente.
+- Campos para fechas de vacaciones.
 
-## INICIO
+### SUPERADMIN / ADMIN / ROOT
 
-Boton en la pagina superior derecha para ingresar, en la parte superior izquierda se encuentra el logo. Abajo abarcando gran parte de la vista el logo y el lema de la aplicacion.
+#### CRUD EMPLEADO 
+- Formulario con información personal y horarios.
 
-## INICIO DE SESION
+#### CRUD AREA 
+- Formulario para añadir áreas de trabajo.
 
-Dos campos donde se solicita ingresar el correo electronico y la contraseña. 
+#### CRUD CIUDAD / SEDE 
+- Formulario para añadir ciudades.
 
-## PAGINA DE BIENVENIDA
+#### CRUD USUARIOS
+- Formulario para añadir usuarios y asignar permisos.
 
-La barra de navegacion del Empleado y un texto en blanco para dar la bienvenida al usuario y una pequeña frase.
+#### CRUD ACTIVIDADES VAC/TRAINING/WORKDAY 
+- Formulario para asignar horarios de trabajo y training.
 
-## EMPLEADO
+#### Grafico de Gantt
+- Generado para cada usuario seleccionado.
 
-### SOLICITUD DE EMPLEADO HORARIO 
+#### SOLICITUDES VAC/TURNO 
+- Tabla de solicitudes con botones de aceptar y rechazar.
 
-La ciudad y departamento o Area se calculan automaticamente. Existe un campo para agregar una descripcion opcional para el cambio de horario. Se podra ver el Turno actual y su horario, al igual que los diferentes turnos y horarios que se cuentan.
+#### CARGA MASIVA 
+- Vista para cargar archivos de datos.
 
-### SOLICITUD DE EMPLEADO VACACIONES 
+## Diagrama de Casos de Uso
 
-La ciudad y departamento o Area se calculan automaticamente. Existe un campo para agregar una descripcion opcional para el cambio de horario. Ademas se muestran los dias dias disponibles y dias restantes para ser tomados como vacaciones.
+## Modelo de la base de datos
 
-## SUPERADMIN / ADMIN / ROOT
+- **Administrador**
+  - NombreAdmin: String
+  - CorreoAdmin: String
+  - Contrasena: String
+  - Region: String
+  - Root: String
 
-### CRUD EMPLEADO 
+- **Area**
+  - NombreArea: String
+  - Descripcion: String
 
-Es un formulario con los campos: Nombre, Apellido paterno y materno, fecha de nacimiento, corre, region, la cual por defecto sera la del administrador, Area de trabajo, departamento, el contrato, fecha inicial y final del turno que tendra el empleado, la descripcion de su horario de training teniendo la fecha, y sus horarios, ademas del nombre del administrador encargado y la fecha de su ingreso.
+- **Contratos**
+  - TipoContrato: String
+  - DiasTrabajados: Number
+  - DiasDescansados: Number
+  - HorasPorDia: Number
+  - TurnosContrato: Array
 
-### CRUD AREA 
+- **Departamento**
+  - NombreDepartamento: String
+  - Direccion: 
+    - Numero: String
+    - Calle: String
+    - Colonia: String
+    - Cp: String
 
-Un formulario el cual se solicite el nombre del area y descripcion. 
+- **Empleado**
+  - Nombre: String
+  - AppE: String
+  - ApmE: String
+  - FechaNac: Date
+  - Correo: String
+  - Contrasena: String
+  - Region: String
+  - AreaTrabajo: String
+  - Departamento: String
+  - Contrato: String
+  - TurnoActual: 
+    - Inicio: String
+    - Fin: String
+  - HorarioTraining: 
+    - Fecha: Date
+    - HoraInicial: String
+    - HoraFinal: String
+  - NombreAdmin: String
+  - FechaDeIngreso: Date
 
-### CRUD CIUDAD /SEDE 
+- **HistorialHorario**
+  - NombreEmpleado: String
+  - FechaInicio: Date
+  - FechaFin: Date
 
-Un formulario el cual se solicite el nombre de la ciudad.
+- **Sede**
+  - Region: String
+  - Pais: String
 
-### CRUD USUARIOS
+- **SolicitudHorario**
+  - NombreEmpleado: String
+  - NombreAdmin: String
+  - Contrato: String
+  - TurnoSolicitado: 
+    - Inicio: String
+    - Fin: String
+  - EstadoSolicitud: String
+  - Correo: String
 
-Un formulario que solicite el nombre del administrador, su correo, la contraseña, la region, este seria con un combo y el siguiente campo seria contralado solamente por los super-admistradores y es el campo de los permisos de super-admistrador.
+- **SolicitudVacaciones**
+  - NombreEmpleado: String
+  - FechaSolicitud: 
+    - FechaInicioVacaciones: Date
+    - FechaTerminoVacaciones: Date
+  - EstadoSolicitud: String
+  - Descripcion: String
 
-### CRUD ACTIVIDADES VAC/TRAINING/WORKDAY 
-Se accederan a las actividades desde la barra de navigacion del admistrador. Para cada campo (Trainig y Workday) se tendra un3                                                                                                                  formulario para asignar a un empleado sus horarios para workday y training que al guardar los cambios se mande una notificacion via correo electronico de la asignacion.
-
-### Grafico de Gantt
-
-La grafica GANTT genera en una vista aparte por cada usuario seleccionado.
-
-Cada campo anteriormente visto es filtrado por desde un boton localizado debajo de la barra de navegacion. 
-
-### SOLICITUDES VAC/TURNO 
-
-En este apartado se podra llegar desde la barra de navegacion del administrador y se mostrara una tabla con el nombre, turno, fecha de termino y las respectivas acciones controladas por 2 botones “Rechazar” y ”Aceptar”.
-
-### CARGA MASIVA 
-
-Otra vista aparte donde se permite arrastrar archivos .xlsx, .csv, etc. o bien al dar click en el apartado donde se puede arrastrar se abra una pestaña del explorador de archivos y desde ahi poder cargar los archivos.
-# Diagrama de casos de Uso
-
-# Modelo de la base de datos
-
-### Administrador
-- **NombreAdmin**: String
-- **CorreoAdmin**: String
-- **Contrasena**: String
-- **Region**: String
-- **root**: String
-### Area 
-- **NombreArea**: String,
-  **Descripcion**: String
-### Contratos
-- **TipoContrato**: String
-- **DiasTrabajados**: Number
-- **DiasDescansados**: Number
-- **HorasPorDia**: Number
-- **TurnosContrato**: Array
-
-### Departamento
-- **NombreDepartamento**: String
-- **Direccion**: 
-  - **Numero**: String
-  - **Calle**: String
-  - **Colonia**: String
-  - **Cp**: String
-
-### Empleado
-- **Nombre**: String
-- **AppE**: String
-- **ApmE**: String
-- **FechaNac**: Date
-- **Correo**: String
-- **Contrasena**: String
-- **Region**: String
-- **AreaTrabajo**: String
-- **Departamento**: String
-- **Contrato**: String
-- **TurnoActual**: 
-  - **inicio**: String
-  - **fin**: String
-- **HorarioTraining**: 
-  - **Fecha**: Date
-  - **HoraInicial**: String
-  - **HoraFinal**: String
-- **NombreAdmin**: String
-- **FechaDeIngreso**: Date
-
-### HistorialHorario
-- **NombreEmpleado**: String
-- **FechaInicio**: Date
-- **FechaFin**: Date
-
-### Sede
-- **region**: String
-- **pais**: String
-
-### SolicitudHorario
-- **NombreEmpleado**: String
-- **NombreAdmin**: String
-- **Contrato**: String
-- **TurnoSolicitado**: 
-  - **inicio**: String
-  - **fin**: String
-- **EstadoSolicitud**: String
-- **Correo**: String
-
-### SolicitudVacaciones
-- **NombreEmpleado**: String
-- **FechaSolicitud**: 
-  - **FechaInicioVacaciones**: Date
-  - **FechaTerminoVacaciones**: Date
-- **EstadoSolicitud**: String
-- **Descripcion**: String
-
-### Turno
-- **nombreTurno**: String
-- **horaFinal**: Date
-- **horaInicio**: Date
+- **Turno**
+  - NombreTurno: String
+  - HoraFinal: Date
+  - HoraInicio: Date

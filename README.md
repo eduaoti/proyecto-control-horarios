@@ -220,5 +220,5 @@ Aplicación web para el registro y asignación de horarios de empleados, utiliza
 
 ![DC5](https://raw.githubusercontent.com/ABOK451/proyecto-control-horarios/main/documentacion/diagrama%20de%20componente/dc5.jpg)
 
-## Manual de Instalacion 
-
+## Manual de Instalación
+  - https://drive.google.com/drive/folders/13ea2IMSp6LadQ8AzyaKcv9Fye6yTEtRI?usp=drive_link

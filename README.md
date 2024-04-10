@@ -209,7 +209,6 @@ Aplicación web para el registro y asignación de horarios de empleados, utiliza
   - HoraInicio: Date
  
 ## Diagrama de Componentes
-## Diagrama de Componentes
 
 ![DC1](https://raw.githubusercontent.com/ABOK451/proyecto-control-horarios/main/documentacion/diagrama%20de%20componente/dc1.jpg)
 
@@ -221,5 +220,5 @@ Aplicación web para el registro y asignación de horarios de empleados, utiliza
 
 ![DC5](https://raw.githubusercontent.com/ABOK451/proyecto-control-horarios/main/documentacion/diagrama%20de%20componente/dc5.jpg)
 
-  
+## Manual de Instalacion 
 

@@ -2,7 +2,6 @@
 
 ## Descripción
 
-Claro, puedo detallar más la descripción:
 
 La aplicación web que se propone tiene como objetivo principal facilitar el registro y la asignación de horarios para empleados de una empresa o institución. Para ello, se utilizará el framework Angular junto con una librería de Gantt, lo que permitirá una interfaz dinámica e intuitiva para la gestión de los horarios.
 

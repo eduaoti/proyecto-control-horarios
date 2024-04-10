@@ -1,8 +1,16 @@
 # ControlHorarios
 
 ## Descripción
-Aplicación web para el registro y asignación de horarios de empleados, utilizando Angular y una librería de Gantt.
 
+Claro, puedo detallar más la descripción:
+
+La aplicación web que se propone tiene como objetivo principal facilitar el registro y la asignación de horarios para empleados de una empresa o institución. Para ello, se utilizará el framework Angular junto con una librería de Gantt, lo que permitirá una interfaz dinámica e intuitiva para la gestión de los horarios.
+
+El proceso de desarrollo se dividirá en varias etapas. En primer lugar, se diseñará y desarrollará la interfaz de usuario utilizando Angular, aprovechando sus capacidades para crear componentes reutilizables, estructura modular y gestión eficiente del estado de la aplicación. La interfaz estará diseñada de manera que sea fácil de entender y utilizar tanto para los administradores encargados de asignar los horarios como para los empleados que consultan sus propios horarios.
+
+Una vez establecida la interfaz de usuario, se integrará una librería de Gantt que permita visualizar y gestionar los horarios de manera eficiente. Esta librería ofrecerá funcionalidades como la creación, modificación y eliminación de tareas (en este caso, turnos de trabajo), así como la capacidad de arrastrar y soltar para ajustar los horarios de manera intuitiva. Además, se implementarán características como la visualización de la carga de trabajo de cada empleado, la detección de conflictos de horarios y la generación de informes y estadísticas sobre la distribución del tiempo laboral.
+
+Para garantizar la seguridad de los datos y la privacidad de los empleados, se implementarán medidas de autenticación y autorización, de modo que solo los usuarios autorizados puedan acceder y realizar cambios en los horarios. Se podrán establecer diferentes niveles de acceso, como administradores con control total sobre los horarios y empleados con permisos limitados para consultar su propio horario y solicitar cambios.
 ## Historias de Usuario 
 
 ### Empleado

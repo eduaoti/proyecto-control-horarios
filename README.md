@@ -230,4 +230,4 @@ Para garantizar la seguridad de los datos y la privacidad de los empleados, se i
 ## Manual de Instalación
   - https://drive.google.com/drive/folders/13ea2IMSp6LadQ8AzyaKcv9Fye6yTEtRI?usp=drive_link
 ## Casos de Pruebas
-- https://drive.google.com/drive/folders/1jCYej6XJ4CoaRat0z3voha3V_wckcrrQ?usp=drive_link
+- https://drive.google.com/drive/folders/1O5lQufb_uz0nobFIUe_qKMd_WQk1UQkI?usp=drive_link

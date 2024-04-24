@@ -21,6 +21,8 @@ Para garantizar la seguridad de los datos y la privacidad de los empleados, se i
 - **HI-USE-005:** Como Empleado, quiero Acceder al historial de horarios anteriores.
 - **HI-USE-006:** Como Empleado, quiero Visualizar y gestionar documentos personales.
 
+### Administrador
+
 - **HI-USA-001:** Como Administrador, quiero Gestionar número de empleados por turno.
 - **HI-USA-002:** Como Administrador, quiero Asignar periodos de training a empleados.
 - **HI-USA-003:** Como Administrador, quiero Registrar nuevos empleados y cambios de horario.

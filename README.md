@@ -14,29 +14,27 @@ Para garantizar la seguridad de los datos y la privacidad de los empleados, se i
 
 ### Empleado
 
-- **HI-USE-001:** Solicitar horario mensual.
-- **HI-USE-002:** Visualizar horario mensual en formato Gantt.
-- **HI-USE-003:** Confirmación rápida de solicitud de horario.
-- **HI-USE-004:** Solicitar vacaciones.
-- **HI-USE-005:** Acceder al historial de horarios anteriores.
-- **HI-USE-006:** Visualizar y gestionar documentos personales.
+- **HI-USE-001:** Como Empleado, quiero Solicitar horario mensual .
+- **HI-USE-002:** Como Empleado, quiero Visualizar horario mensual en formato Gantt.
+- **HI-USE-003:** Como Empleado, quiero Confirmación rápida de solicitud de horario.
+- **HI-USE-004:** Como Empleado, quiero Solicitar vacaciones.
+- **HI-USE-005:** Como Empleado, quiero Acceder al historial de horarios anteriores.
+- **HI-USE-006:** Como Empleado, quiero Visualizar y gestionar documentos personales.
 
-### Administrador
-
-- **HI-USA-001:** Gestionar número de empleados por turno.
-- **HI-USA-002:** Asignar periodos de training a empleados.
-- **HI-USA-003:** Registrar nuevos empleados y cambios de horario.
-- **HI-USA-004:** Generar horario mensual automáticamente.
-- **HI-USA-005:** Visualizar horarios de empleados en formato Gantt.
+- **HI-USA-001:** Como Administrador, quiero Gestionar número de empleados por turno.
+- **HI-USA-002:** Como Administrador, quiero Asignar periodos de training a empleados.
+- **HI-USA-003:** Como Administrador, quiero Registrar nuevos empleados y cambios de horario.
+- **HI-USA-004:** Como Administrador, quiero Generar horario mensual automáticamente.
+- **HI-USA-005:** Como Administrador, quiero Visualizar horarios de empleados en formato Gantt.
 
 ### Super Administrador
 
-- **HI-USS-001:** Visualizar lista de administradores y regiones.
-- **HI-USS-002:** Ver empleados de cada administrador.
-- **HI-USS-003:** Visualizar jornadas de trabajo de empleados.
-- **HI-USS-004:** Dar de alta nuevos administradores y usuarios.
-- **HI-USS-005:** Realizar copias de seguridad y restaurar datos.
-
+- **HI-USS-001:** Como Super Administrador, quiero Visualizar lista de administradores y regiones.
+- **HI-USS-002:** Como Super Administrador, quiero Ver empleados de cada administrador.
+- **HI-USS-003:** Como Super Administrador, quiero Visualizar jornadas de trabajo de empleados.
+- **HI-USS-004:** Como Super Administrador, quiero Dar de alta nuevos administradores y usuarios.
+- **HI-USS-005:** Como Super Administrador, quiero Realizar copias de seguridad y restaurar datos.
+- 
 ## Análisis de la Solución
 ### Requerimientos Funcionales - Integradora 2024
 
@@ -83,9 +81,14 @@ Para garantizar la seguridad de los datos y la privacidad de los empleados, se i
 
 ### Barra de navegación Empleado
 - Botones: Inicio, Solicitudes, Gantt.
+  <img width="302" alt="image" src="https://github.com/ABOK451/proyecto-control-horarios/assets/146273049/3d86b9c7-57b1-42ff-b3db-0825721fb391">
+
+  
 
 ### Barra de navegación Administrador
 - Botones: Inicio, Gestión empleados, Solicitudes, Gantt.
+  ![image](https://github.com/ABOK451/proyecto-control-horarios/assets/146273049/a7e2bdf3-8aa7-433c-96e3-d931c02ea813)
+
 
 ### INICIO
 - Logotipo y lema de la aplicación.

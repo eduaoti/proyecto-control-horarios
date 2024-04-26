@@ -240,6 +240,61 @@ Para garantizar la seguridad de los datos y la privacidad de los empleados, se i
 
 ![DC5](https://raw.githubusercontent.com/ABOK451/proyecto-control-horarios/main/documentacion/diagrama%20de%20componente/dc5.jpg)
 
+Basándome en la información proporcionada, propongo un plan de iteraciones para el desarrollo del sistema de control de horarios:
+
+### Iteración 1: Configuración del Entorno y Diseño de la Interfaz de Usuario
+- Configurar el entorno de desarrollo con Angular.
+- Diseñar la estructura de componentes y módulos de la interfaz de usuario.
+- Implementar la autenticación básica para empleados, administradores y super administradores.
+- Crear las páginas de inicio de sesión y página de bienvenida para cada tipo de usuario.
+
+### Iteración 2: Implementación de Funcionalidades Básicas del Módulo de Empleado
+- Desarrollar la funcionalidad para que los empleados puedan solicitar su horario para el próximo mes.
+- Permitir a los empleados ver su horario mensual en formato de Gantt.
+- Implementar la capacidad para que los empleados soliciten vacaciones a través de la aplicación.
+- Añadir la funcionalidad para que los empleados puedan ver información sobre su sede y área de trabajo.
+
+### Iteración 3: Implementación de Funcionalidades Básicas del Módulo de Administrador
+- Desarrollar la funcionalidad para que los administradores gestionen y ajusten el número de empleados por turno.
+- Permitir a los administradores asignar periodos de training dentro del calendario de los empleados.
+- Implementar el registro de nuevos empleados y la capacidad de realizar cambios en sus horarios.
+
+### Iteración 4: Integración de la Librería de Gantt y Mejoras en la Interfaz de Usuario
+- Integrar la librería de Gantt para visualizar y gestionar los horarios de manera eficiente.
+- Mejorar la interfaz de usuario para que sea más intuitiva y fácil de usar.
+- Añadir características como la visualización de la carga de trabajo de cada empleado y la detección de conflictos de horarios.
+
+### Iteración 5: Implementación de Funcionalidades del Módulo de Super Administrador
+- Desarrollar la funcionalidad para que el super administrador pueda visualizar y seleccionar la lista de todos los administradores y las regiones que administran.
+- Permitir al super administrador gestionar los usuarios y sus permisos, incluyendo la creación de nuevos usuarios administradores.
+
+### Iteración 6: Refinamiento y Pruebas
+- Realizar pruebas exhaustivas del sistema para detectar y corregir errores.
+- Optimizar el rendimiento y la seguridad del sistema.
+- Mejorar la documentación del proyecto, incluyendo el manual de instalación y casos de prueba.
+
+### Diagrama Entandares de base de datos
+![DBase](https://github.com/ABOK451/proyecto-control-horarios/assets/146273049/9ad246ad-1a6f-4ab0-9668-bedf16e67142)
+
+
+### Explicación del Modelo
+
+- `Administrador`: Almacena información sobre los administradores del sistema.
+- `Empleado`: Contiene datos de los empleados.
+- `SuperAdmin`: Almacena información sobre los superadministradores.
+- `Area`: Representa las áreas de trabajo en la empresa.
+- `Turno`: Contiene información sobre los turnos de trabajo.
+- `Contrato`: Describe los detalles de los contratos laborales.
+
+### Consideraciones del Modelo
+
+- Cada empleado puede tener asociado un único turno de trabajo.
+- Cada empleado tiene un único administrador asociado.
+- Cada empleado pertenece a un área específica.
+- Los administradores y superadministradores pueden gestionar múltiples empleados.
+- Los empleados pueden solicitar vacaciones y turnos de trabajo.
+- Los contratos contienen información sobre los días laborales, días de descanso y horas por día.
+
 ## Manual de Instalación
   - https://drive.google.com/drive/folders/13ea2IMSp6LadQ8AzyaKcv9Fye6yTEtRI?usp=drive_link
 ## Casos de Pruebas

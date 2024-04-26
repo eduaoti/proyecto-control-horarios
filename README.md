@@ -14,28 +14,31 @@ Para garantizar la seguridad de los datos y la privacidad de los empleados, se i
 
 ### Empleado
 
-- **HI-USE-001:** Como Empleado, quiero Solicitar horario mensual .
-- **HI-USE-002:** Como Empleado, quiero Visualizar horario mensual en formato Gantt.
-- **HI-USE-003:** Como Empleado, quiero Confirmación rápida de solicitud de horario.
-- **HI-USE-004:** Como Empleado, quiero Solicitar vacaciones.
-- **HI-USE-005:** Como Empleado, quiero Acceder al historial de horarios anteriores.
-- **HI-USE-006:** Como Empleado, quiero Visualizar y gestionar documentos personales.
+- **HI-USA-001:** Como empleado, quiero poder solicitar mi horario para el próximo mes, eligiendo el tipo de turno que      prefiero, para tener mayor flexibilidad y comodidad en mi jornada laboral.
+- **HI-USA-002:** Como empleado, quiero ver mi horario mensual en un formato de Gantt para tener una visión clara y estructurada de mis turnos de trabajo, facilitando así la planificación de mis actividades fuera del trabajo.
+- **HI-USA-003:** Como empleado, quiero que la aplicación me indique claramente a qué sede pertenezco y a qué área de trabajo, para tener una referencia rápida de mi ubicación laboral.
+- **HI-USA-004:** Como empleado, deseo tener la capacidad de solicitar vacaciones a través de la aplicación, indicando las fechas deseadas y asegurándome de que no haya conflictos con mi horario laboral, permitiéndome disfrutar de períodos de descanso sin afectar la operatividad del equipo.
+- **HI-USA-005:** El empleado quiere solicitar vacaciones visualizando los días disponibles, facilitando la elección de fechas que se ajusten tanto a sus necesidades como a la disponibilidad de la empresa.
+- **HI-USA-006:** Después de elegir mi turno deseado, la función de confirmación es rápida y eficiente, asegurando una respuesta inmediata para que pueda organizarme con anticipación.
+- **HI-USA-007:** La aplicación me notifica vía correo electrónico sobre el veredicto de mi solicitud, que puede ser rechazado o aceptado, proporcionando una comunicación clara y oportuna sobre el estado de mi solicitud.
+
 
 ### Administrador
 
-- **HI-USA-001:** Como Administrador, quiero Gestionar número de empleados por turno.
-- **HI-USA-002:** Como Administrador, quiero Asignar periodos de training a empleados.
-- **HI-USA-003:** Como Administrador, quiero Registrar nuevos empleados y cambios de horario.
-- **HI-USA-004:** Como Administrador, quiero Generar horario mensual automáticamente.
-- **HI-USA-005:** Como Administrador, quiero Visualizar horarios de empleados en formato Gantt.
+- **HI-USA-008:** Quiero gestionar y ajustar el número de empleados permitidos en cada tipo de turno, para garantizar una distribución equitativa de recursos y optimizar la asignación de tareas. 
+- **HI-USA-009:** Deseo asignar periodos de training dentro del calendario de los empleados, para mejorar las habilidades y conocimientos del personal, contribuyendo al desarrollo profesional de manera planificada. 
+- **HI-USA-010:** Deseo registrar a nuevos empleados en la aplicación y realizar cambios en sus horarios cuando sea necesario, para mantener actualizada la información del personal y adaptarla a las necesidades operativas.
+- **HI-USA-011:** Deseo poder cargar información de forma masiva mediante archivos en formatos .xlsx, .json y/o .csv, para facilitar la gestión eficiente de grandes cantidades de datos y mantener la consistencia en la base de información.
+
 
 ### Super Administrador
+- **HI-USS-012:** El super administrador se loguea, visualiza y selecciona la lista de todos los administradores y la región que administran, para llevar un control centralizado de las funciones administrativas.
+- **HI-USS-013:** Si selecciona a un administrador, visualiza todos los empleados que este administra, permitiendo un seguimiento detallado de la gestión de personal por parte de cada administrador.
+- **HI-USS-014:**  Quiero visualizar las jornadas de trabajo de cada empleado para determinar el mejor momento para sus vacaciones, facilitando la planificación y asegurando la continuidad operativa.
+- **HI-USS-015:**  Quiero dar de alta nuevos usuarios administradores y otros tipos de usuarios para tener más apoyo en la administración de las distintas regiones, garantizando una gestión eficiente y escalable.
+- **HI-USS-016:**  Quiero recibir alertas sobre posibles problemas de rendimiento o seguridad en la aplicación, para tomar medidas proactivas y mantener la estabilidad del sistema.
+- **HI-USS-017:**  Necesito tener la capacidad de realizar copias de seguridad y restaurar datos en caso de pérdida o errores críticos, para asegurar la disponibilidad y la integridad de la información del sistema y garantizar la continuidad del servicio.
 
-- **HI-USS-001:** Como Super Administrador, quiero Visualizar lista de administradores y regiones.
-- **HI-USS-002:** Como Super Administrador, quiero Ver empleados de cada administrador.
-- **HI-USS-003:** Como Super Administrador, quiero Visualizar jornadas de trabajo de empleados.
-- **HI-USS-004:** Como Super Administrador, quiero Dar de alta nuevos administradores y usuarios.
-- **HI-USS-005:** Como Super Administrador, quiero Realizar copias de seguridad y restaurar datos.
 - 
 ## Análisis de la Solución
 ### Requerimientos Funcionales - Integradora 2024

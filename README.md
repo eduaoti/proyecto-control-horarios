@@ -82,13 +82,14 @@ Para garantizar la seguridad de los datos y la privacidad de los empleados, se i
 
 ![DCU3](https://github.com/ABOK451/proyecto-control-horarios/blob/main/documentacion/diagrama%20casos%20de%20uso/imagen_2024-04-09_000204959.png)
 
+### Diagrama de Actividades
+<img width="280" alt="image" src="https://github.com/ABOK451/proyecto-control-horarios/assets/146273049/377d7866-197e-40ad-a52f-66a11bba2dea">
+
 ## Vistas
 
 ### Barra de navegación Empleado
 - Botones: Inicio, Solicitudes, Gantt.
   <img width="302" alt="image" src="https://github.com/ABOK451/proyecto-control-horarios/assets/146273049/3d86b9c7-57b1-42ff-b3db-0825721fb391">
-
-  
 
 ### Barra de navegación Administrador
 - Botones: Inicio, Gestión empleados, Solicitudes, Gantt.
